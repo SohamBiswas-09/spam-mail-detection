@@ -1,0 +1,5 @@
+# Handle line endings automatically
+* text=auto
+
+# Ensure consistent endings for common file types
+*.csv  text eol=lf

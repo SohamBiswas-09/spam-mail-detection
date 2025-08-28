@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #4a90e2;
+    --danger-color: #ff4757;
+    --success-color: #2ed573;
+    --background-color: #f5f6fa;
+    --text-color: #2f3542;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 2.5em;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+  }
+  
+  .detect-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .detect-btn:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+  }
+  
+  .detect-btn:active {
+    transform: translateY(0);
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+  }
+  
+  .result.spam {
+    background-color: #ffeff0;
+    color: var(--danger-color);
+  }
+  
+  .result:not(.spam) {
+    background-color: #e8f9f0;
+    color: var(--success-color);
+  }
+  
+  .loading .btn-text {
+    visibility: hidden;
+  }
+  
+  .loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  #footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
