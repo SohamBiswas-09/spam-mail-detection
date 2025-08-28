@@ -18,34 +18,6 @@ A simple and effective Spam Mail Detection system that classifies emails as **Sp
 - Flask / FastAPI (optional, for web deployment)
 - Jupyter Notebook (for training and visualization)
 
-## 📂 Project Structure
-SpamMailDetector/
-│
-├── __pycache__/              # Compiled Python files
-│   └── main.cpython-*.pyc
-│
-├── venv/                     # Virtual environment (should be in .gitignore)
-│   ├── Include/
-│   ├── Lib/
-│   ├── Scripts/
-│   └── pyvenv.cfg
-│
-├── .dockerignore             # Docker ignore file
-├── docker-compose.yml        # Docker Compose config (multi-container setup)
-├── Dockerfile                # Dockerfile for containerizing the app
-│
-├── emails.csv                # Dataset file
-├── index.html                # HTML frontend
-├── main.py                   # Main Python app script (likely backend logic)
-├── script.js                 # JavaScript frontend script
-├── style.css                 # CSS styles
-│
-├── spam_model.pkl            # Trained ML model file
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project overview
-
-
-
 ## 📈 Dataset
 
 We used the **[SpamAssassin Public Corpus](https://spamassassin.apache.org/publiccorpus/)** and other open datasets for training.
